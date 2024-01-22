@@ -2,31 +2,42 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,900&display=swap');
 @font-face {
     font-family: 'Cashrole' ;
-    src: url(./assests/fonts/Cashrole.ttf); 
+    src: url(./assests/fonts/Cashrole.ttf);
+}
+:root {
+ /* Root */
+    --background-color:#F4E703;
+    --text-color: #000;
+    --text-color-two: #fff;
+  
 
 }
 
 * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  
 }
-/* Hero Section */
+  /* Hero Section */
 .hero {
-    background-image: url(./assests/images/developer.jpg);
+    /* background-image: url(./assests/images/developer.jpg); */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 100vh;
+    height: 100dvh;
     position: relative;
     display: flex;
+}
+.photo-hero {
+    width: 100%;
+    height: 110dvh; 
+    position: absolute;
+    bottom: 20px;
 }
 
 .container-hero {
     display: flex;  
-    width: 350px;
-    height: 400px;
     position: absolute;
     justify-content: center;
     align-items: center;
@@ -36,17 +47,17 @@
 } 
 
 .polaroid {
-    background-color: #fff;
+    background-color: var(--text-color-two);
     padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.84);
-    /* transform: rotate(3deg); */
+    /* transform: rotate(3deg); */ 
 }
 
 .photo {
     width: 100%;
-    height: auto;
-    border: 5px solid #fff;    
-    filter: grayscale(100%);
+    height: 300px;
+    border: 5px solid var(--text-color-two);    
+    filter: grayscale(70%);
 }
 
 .polaroid p{
@@ -54,17 +65,55 @@
     font-size: 1.5rem;
     font-weight: 500;
 }
-/* About Section */
-.black-line {
-    border: 1px solid black; 
-    width: 90%;
-    margin: 20px auto; 
-    
-}
-.about-me{
-    background-color:#F4E703;
+
+/* Navbar Section */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    font-family: 'Roboto Flex';
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;  
 }
+
+.navbar-left,
+.navbar-right {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+.navbar-left li,
+.navbar-right li {
+    padding: 15px 20px; 
+}
+
+.navbar-left .contact-left {
+    margin-right: auto; /*contacto a la izq */
+}
+
+.navbar-left li a,
+.navbar-right li a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #000;
+}
+
+.navbar-left li a:hover,
+.navbar-right li a:hover {
+    color: #fff;
+    background-color: #000;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+
+/* About Section */
