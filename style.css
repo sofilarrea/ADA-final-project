@@ -13,7 +13,7 @@
     --font-family-two: 'Inter Tight', sans-serif;
     --font-family-three: 'Playfair Display', serif;
     --font-family-four: 'Cashrole', serif;
-
+     --glass-effect: #fafafa10;
 
 }
 
@@ -32,6 +32,7 @@
     height: 100dvh;
     position: relative;
     display: flex;
+    background-attachment: fixed;
 
 }
 .container-hero h1 {
@@ -100,6 +101,8 @@
     text-transform: uppercase;
     letter-spacing: 1px;
     color: var(--color-secundary);
+    opacity:  0.5;
+
 }
 
 .navbar-left li a:hover,
@@ -133,7 +136,41 @@ body.scrolled .navbar {
 } 
 
 
+/* About Section */
+.section-one{
+    height: 100vh;    
+    background-image: url(./assests/images/mike-ko-tjod6u2RpiU-unsplash.jpg);
+    background-size: cover;
+    width: 100%;
+    position: absolute;
+    display: flex;
+}
+.card {
+    border: 2px white #fafafa10;
+    border-radius: 3%;
+    width: 40rem;
+    height: 30rem;
+    margin: 0 auto; 
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 20%;
+    left: 30%; 
+}
 
+.glass-effect{
+    background-color: var(--glass-effect);
+    backdrop-filter: blur(0.4rem);   
+}
+
+.quotation-mark {
+    width: 20%;
+    position: absolute;
+    top: -20px; 
+    right: -20px; 
+    text-shadow: 2px 5px #000;
+    z-index: 1; 
+}
 
 /* Footer */
 .footer{
