@@ -4,12 +4,16 @@
     font-family: 'Cashrole' ;
     src: url(./assests/fonts/Cashrole.ttf);
 }
+/* Root */
 :root {
- /* Root */
     --background-color:#F4E703;
     --color-primary: #000;
     --color-secundary: #fff;
-  
+    --font-family-one: 'Roboto Flex', sans-serif;
+    --font-family-two: 'Inter Tight', sans-serif;
+    --font-family-three: 'Playfair Display', serif;
+    --font-family-four: 'Cashrole', serif;
+    
 
 }
 
@@ -183,3 +187,34 @@ body.scrolled .navbar {
     color: var(--color-primary);
     padding: 0 30px;
 }
+
+/* Footer */
+.footer{
+    background-color: var(--color-primary);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+    padding: 0px 50px;
+
+}
+
+    
+  .footer-links {
+    display: flex;
+    align-items: center;
+  }
+  .footer-links a {
+    color: black;
+    opacity: 0.15;
+    text-decoration: none;
+    font-size: 24px;
+    padding: 0px 10px;
+  }
+  .footer-links a:hover {
+    opacity: 1;
+  }
+  .footer .fa-heart {
+    color: #D23333;
+  }
+  
