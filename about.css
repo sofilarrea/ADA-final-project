@@ -51,7 +51,7 @@
 
 }
 /* Navbar Section */
-/* .navbar {
+.navbar {
     position: fixed;
     top: 0;
     left: 0;
@@ -87,13 +87,13 @@
     font-weight: 500;
     text-transform: uppercase;
     letter-spacing: 1px;
-    color: var(--color-primary);
+    color: var(--color-secundary);
 }
 
 .navbar-left li a:hover,
 .navbar-right li a:hover {
     color:var(--color-secundary);
-    background-color:var(--color-primary);
+    background-color:var(--color-tertiary);
     padding: 10px 20px;
     border-radius: 5px;
     transition: all 0.3s ease-in-out;
@@ -118,4 +118,14 @@
 
 body.scrolled .navbar {
     background-color: var(--color-primary)
-} */
+} 
+
+.intro p{
+    font-size: 1rem;
+    font-family: 'Roboto Flex';
+    color: var(--color-secundary);
+    text-align: center;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    padding: 0 10%;
+}
