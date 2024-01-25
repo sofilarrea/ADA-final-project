@@ -15,10 +15,10 @@
     --font-family-three: 'Playfair Display', serif;
     --font-family-four: 'Cashrole', serif;
     --font-family-five: 'Grape Nuts', cursive;
-    --glass-effect: #fafafa10;
-    --color-smoke: #84837D;
-    --font-size-h1: 4.5rem;
-
+     --glass-effect: #fafafa10;
+     --color-smoke: #84837D;
+     --font-size-p: 1.2rem;
+     --font-size-h1: 4.5rem;
 }
 
 * {
@@ -35,7 +35,6 @@
     position: relative;
     display: flex;
     background-attachment: fixed;
-
 }
 .video{
     position: absolute;
@@ -51,14 +50,35 @@
     position: absolute;
     top: 20%;
     left: 20%;   
-    color: var(--color-primary)    
+    color: var(--color-secundary)    
 }
-.black-line{
-    width: 25%;
+.withe-line-contactc{
+    width: 20%;
     height: 1px;
     background-color: var(--color-secundary);
     position: absolute;
     top: 45%;
-    left: 25%;
-    
+    left: 29%;
+} 
+.contact-me-text p{ 
+    color: var(--color-secundary);
+    line-height: 1.5;
+    position: absolute;
+    z-index: 1;
+    margin-left: 23%;
+    margin-top: 25%;
+    margin-bottom: 10%;
+    padding: 10px 20%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/* Section Contact Me */
+.section-contact-me {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100dvh; 
+    background-color:#000000;
+    position: relative;
+    display: flex;
 }
