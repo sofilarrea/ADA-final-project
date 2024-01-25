@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100;0,200;1,900&family=Roboto+Flex:opsz,wght@8..144,200;8..144,400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Grape+Nuts&display=swap');
 @font-face {
     font-family: 'Cashrole' ;
     src: url(./assests/fonts/Cashrole.ttf);
@@ -13,6 +14,7 @@
     --font-family-two: 'Inter Tight', sans-serif;
     --font-family-three: 'Playfair Display', serif;
     --font-family-four: 'Cashrole', serif;
+    --font-family-five: 'Grape Nuts', cursive;
      --glass-effect: #fafafa10;
      --color-smoke: #84837D;
 
@@ -143,7 +145,7 @@ body.scrolled .navbar {
     background-image: url(./assests/images/mike-ko-tjod6u2RpiU-unsplash.jpg);
     background-size: cover;
     width: 100%;
-    position: absolute;
+    position: relative;
     display: flex;
 }
 .card {
@@ -210,20 +212,17 @@ body.scrolled .navbar {
     align-items: center;
     text-align: center;
 }
-.section-one-text h3{
-    font-family: var(--font-family-two);
+.section-one-text h3 {
+    font-family: var(--font-family-three);
     color: var(--color-secundary);
-    margin-bottom: 10px;
+    margin-top: 55%;
 }
 .section-one-text p{
     font-family: var(--font-family-two);
     font-size: 15px;
-    color: var(--color-secundary);
-    
-    margin-top: 35%;
+    color: var(--color-secundary);   
     justify-content: center;   
-    padding: 40px 30%;
-     
+    padding: 40px 30%;     
 }
 
 /* Footer */
