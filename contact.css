@@ -15,8 +15,9 @@
     --font-family-three: 'Playfair Display', serif;
     --font-family-four: 'Cashrole', serif;
     --font-family-five: 'Grape Nuts', cursive;
-     --glass-effect: #fafafa10;
-     --color-smoke: #84837D;
+    --glass-effect: #fafafa10;
+    --color-smoke: #84837D;
+    --font-size-h1: 4.5rem;
 
 }
 
@@ -25,4 +26,39 @@
     margin: 0;
     padding: 0;
   
+}
+.hero{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100dvh;
+    position: relative;
+    display: flex;
+    background-attachment: fixed;
+
+}
+.video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.container-hero h1 {
+    font-size: var(--font-size-h1);
+    display: flex;  
+    position: absolute;
+    top: 20%;
+    left: 20%;   
+    color: var(--color-primary)    
+}
+.black-line{
+    width: 25%;
+    height: 1px;
+    background-color: var(--color-secundary);
+    position: absolute;
+    top: 45%;
+    left: 25%;
+    
 }
