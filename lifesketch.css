@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100;0,200;1,900&family=Roboto+Flex:opsz,wght@8..144,200;8..144,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Grape+Nuts&display=swap');
+@font-face {
+    font-family: 'Cashrole' ;
+    src: url(./assests/fonts/Cashrole.ttf);
+}
+/* Root */
+:root {
+    
+    --color-primary: #000;
+    --color-secundary: #fff;
+    --font-family-one: 'Roboto Flex', sans-serif;
+    --font-family-two: 'Inter Tight', sans-serif;
+    --font-family-three: 'Playfair Display', serif;
+    --font-family-four: 'Cashrole', serif;
+    --font-family-five: 'Grape Nuts', cursive;
+     --glass-effect: #fafafa10;
+     --color-smoke: #84837D;
+     --font-size-p: 1.2rem;
+    --font-size-h1: 4.5rem;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  
+}
