@@ -350,3 +350,121 @@ body.scrolled .navbar {
     border-radius: 5px;
     transition: all 0.3s ease-in;
 }
+
+/* Section Contact Me */
+.section-contact-me {
+    position: relative;
+    overflow: hidden;
+    height: 100vh;
+    background-color: var(--color-primary);
+}
+
+.half-section {
+    width: 50%;
+    float: right; /* Use float to make the figure and text appear side by side */
+    position: relative;
+}
+
+.texture-black {
+    width: 100%;
+    height: auto;
+    display: block;
+      
+}
+.texture-photo{
+    width: 250px;
+    opacity: 0.4;
+    position: absolute;
+    top: 25%;
+    left: 60%;
+    z-index: 1;
+
+}
+.half-section-two{
+    background-color: var(--color-primary);
+    float: left;
+    width: 50%;
+}
+
+
+/* Form */
+
+.form-contact {
+    width: 50%; 
+    float: left; 
+    padding: 88px; 
+
+    
+}
+
+.form {
+    margin: 0;
+   
+}
+
+fieldset {
+    border: none;
+}
+
+legend {
+    font-size: 3em;
+    margin-bottom: 50px;
+    font-family: var(--font-family-two);
+    color: var(--color-secundary);
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border-top:  var(--color-secundary);
+    border-left:  var(--color-secundary);
+    border-right:  var(--color-secundary);
+    background-color: var(--color-primary);
+    font-family: var(--font-family-two);
+    resize: none;
+}
+
+textarea {
+    height: 100px;
+    resize: none;
+    
+}
+
+input[type="submit"] {
+    background-color:var(--color-smoke);
+    color:var(--color-primary);
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border: none;
+    padding: 10px 30px;
+}
+
+input[type="submit"]:hover {
+    background-color: green;
+    color: var(--color-primary);
+    border: 2px solid var(--color-primary);
+    text-transform: uppercase;
+
+}
+input[type="submit"]:visited {
+    background-color: #8e3e72;
+}
+/* Leer el input */
+.form input,
+.form textarea {
+    color: var(--color-secundary); 
+}
+.form input[type="email"]:invalid {
+    color: red;
+    border: none;
+}
