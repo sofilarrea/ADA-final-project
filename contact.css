@@ -225,3 +225,12 @@ input[type="submit"]:hover {
 input[type="submit"]:visited {
     background-color: #8e3e72;
 }
+/* Leer el input */
+.form input,
+.form textarea {
+    color: var(--color-secundary); 
+}
+.form input[type="email"]:invalid {
+    color: red;
+    border: none;
+}
