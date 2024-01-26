@@ -76,7 +76,8 @@
     font-family: 'Roboto Flex';
     display: flex;
     justify-content: space-between;
-    align-items: center;  
+    align-items: center; 
+    z-index: 1000; 
 }
 
 .navbar-left,

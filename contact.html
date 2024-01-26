@@ -23,18 +23,35 @@
         </div>  
     </header>    
     <section class="section-contact-me">
+        <h2>Contact Information</h2>
         <div class="half-section">
             <figure>
                 <img src="./assests/images/Leonardo_Diffusion_XL_generate_a_black_background_with_litle_l_0.jpg" alt="texture-black" class="texture-black">
             </figure>
             <figure>
-                <img src="./assests/images/think outside the bok.jpg" alt="Think outside the box" class="texture-photo">
+                <img src="./assests/images/think%20outside%20the%20bok.jpg" alt="Think-outside-the-box" class="texture-photo">
             </figure>
+        </div> 
+        <div class="form-contact">
+            <form action="action_page.php" class="form">
+                <fieldset>
+                    <legend>Contact Form</legend>
+            
+                    <label for="fname">First Name</label>
+                    <input type="text" id="fname" name="firstname" placeholder="Bob">
+            
+                    <label for="lname">Last Name</label>
+                    <input type="text" id="lname" name="lastname" placeholder="Sponger">
+            
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="example@example.com">
+            
+                    <label for="message">Message</label>
+                    <textarea id="message" name="subject" placeholder="I would like to ask for" style="height:100px"></textarea>
+            
+                    <input type="submit" value="Submit" class="submit">
+                </fieldset>
+            </form>
         </div>
-        <div class="half-section-two">
-            <form action="datos.php" method="get"></form>
-        </div>
-    </section>
-    
-    
+    </section>  
 </body>
