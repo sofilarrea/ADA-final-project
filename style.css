@@ -113,7 +113,7 @@
 .navbar-left li a:hover,
 .navbar-right li a:hover {
     color:var(--color-secundary);
-    background-color:var(--color-tertiary);
+    background-color:var(--color-primary);
     padding: 10px 20px;
     border-radius: 5px;
     transition: all 0.3s ease-in-out;
@@ -134,6 +134,7 @@
 }
 .navbar:hover:before {
     opacity: 1;
+    
 }
 
 body.scrolled .navbar {
