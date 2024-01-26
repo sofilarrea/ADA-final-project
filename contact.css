@@ -30,7 +30,7 @@
 }
 
 /* Hero Section */
-.hero{
+.hero-contact-sect{
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -76,7 +76,7 @@
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 /* Navbar Section */
-.navbar {
+.navbar-contact {
     position: fixed;
     top: 0;
     left: 0;
@@ -87,7 +87,7 @@
     align-items: center;
     z-index: 1000;  
 }
-.navbar-left{
+.navbar-left-contact{
     list-style: none;
     margin: 0;
     padding: 0;
