@@ -1,5 +1,5 @@
 /* Hero Section */
-.hero {
+.hero{
     background-image: url(../assests/images/jeremy-bishop-rqWoB4LFgmc-unsplash.jpg); 
     background-size: cover;
     background-position: center;
@@ -8,83 +8,101 @@
     position: relative;
     display: flex;
     background-attachment: fixed;
-    align-items: center; /* Center content vertically */
-    justify-content: center; /* Center content horizontally */
-}
+    padding: .1px; 
 
+}
 .container-hero h1 {
     font-size: 2.2rem;
-    color: var(--color-secundary);
     display: flex;  
     position: absolute;
     top: 20%;
     left: 6%;
     transform: rotate(-90deg);
+    color: var(--color-secundary)
+    
 }
-
-.withe-line {
+.withe-line{
     width: 20%;
     height: 1px;
     background-color: var(--color-secundary);
     position: absolute;
     top: 30%;
-    left: 26%;
-    transform: rotate(-90deg);
+    left: 23%;
+    transform: rotate(-90deg); 
+    
 }
-
-.intro p {
+.intro p{
     position: absolute;
     font-size: 14px;
     font-family: var(--font-family-two);
-    color: var(--color-secundary);    
-    max-width: 50%; /* Limitar texto */
-    text-align: center; /* Center align text */
-    left: 45%;
-    top: 10%;
-}
+    color: var(--color-secundary);
+    left: 33%;
+    top: 5%;
+    bottom: 10%;
+    padding: 33px 8%; 
+} 
+
 
 /* Navbar Section */
-#navbar {
-    background-color: red;
-    display: flex;
-    justify-content: space-between;
+.home {
+    display: flex;   
     align-items: center;
-    position: fixed;
-    width: 100%;
-    height: 60px;
     padding: 0 20px;
+    height: 100%;    
+}
+.home a {
+    padding: 20px 0;
 }
 
+.menu-icon{
+    display: flex;
+    justify-content: flex-end;    
+    gap: 10px;
+    height: 100%;
+    padding: 20px;        
+}
+.navbar-links{
+    display: none;
+    padding: 0;
+    margin: 0;
+}
 .home a,
 .navbar-links li a {
     text-decoration: none;
     color: var(--color-secundary);
     font-family: var(--font-family-one);
     font-size: 0.9rem;
-    font-weight: bold; /* Corrected from bolder */
+    font-weight:bolder;
     text-transform: uppercase;
     opacity: 0.5;
-    letter-spacing: 1px;
-}
-
-.menu-icon {
+    letter-spacing: 1px;   
+} 
+nav {  
     display: flex;
-    justify-content: flex-end;
-    gap: 10px;
+    position:fixed;
+    flex-wrap: wrap;
+    width: 100%;
+    /* height: 60px;     */
+    justify-content: space-between;    
 }
-
+nav ul {
+    list-style-type: none;
+}
 /* Open and close menu */
-.close{
+.close {
     display: none;
 }
 #navbar:target .navbar-links{
     display: flex;
     flex-direction: column;
     gap: 20px;
-    width: 100%;
+    /* width: 100%; */
     height: 100vh;
     padding: 20px;
     margin: 0;
+    background-color: rgba(0, 0, 0, 0.766);
+    
+    
 }
 #navbar:target .open{
     display: none;

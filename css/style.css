@@ -34,8 +34,10 @@
     --color-smoke: #84837D;
     --font-size-p: 1.2rem;
     --font-size-h1: 4.5rem;
-    scroll-behavior: smooth;
-    text-decoration: none;
-    list-style: none;
+    scroll-behavior: none;
  
+}
+.html{
+    scroll-behavior: smooth;
+    
 }
