@@ -1,0 +1,186 @@
+/* Hero Section */
+.hero {
+    background-image: url(../assests/images/jeremy-bishop-rqWoB4LFgmc-unsplash.jpg); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100dvh;
+    position: relative;
+    display: flex;
+    background-attachment: fixed;
+    align-items: center; /* Center content vertically */
+    justify-content: center; /* Center content horizontally */
+}
+
+.container-hero h1 {
+    font-size: 2.2rem;
+    color: var(--color-secundary);
+    display: flex;  
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    transform: rotate(-90deg);
+}
+
+.withe-line {
+    width: 20%;
+    height: 1px;
+    background-color: var(--color-secundary);
+    position: absolute;
+    top: 30%;
+    left: 29%;
+    transform: rotate(-90deg);
+}
+
+.intro p {
+    position: absolute;
+    font-size: 14px;
+    font-family: var(--font-family-two);
+    color: var(--color-secundary);    
+    max-width: 50%; /* Limitar texto */
+    text-align: center; /* Center align text */
+    left: 45%;
+    top: 10%;
+}
+
+/* Navbar Section */
+#navbar {
+    background-color: red;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    padding: 0 20px;
+}
+
+.home a,
+.navbar-links li a {
+    text-decoration: none;
+    color: var(--color-secundary);
+    font-family: var(--font-family-one);
+    font-size: 0.9rem;
+    font-weight: bold; /* Corrected from bolder */
+    text-transform: uppercase;
+    opacity: 0.5;
+    letter-spacing: 1px;
+}
+
+.menu-icon {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+/* Open and close menu */
+.close{
+    display: none;
+}
+#navbar:target .navbar-links{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    height: 100vh;
+    padding: 20px;
+    margin: 0;
+}
+#navbar:target .open{
+    display: none;
+}
+#menu:target .close{
+    display: block;
+   
+}
+
+
+/* Section One */
+.section-one{
+    height: 100dvh;    
+    background-image: url(../assests/images/mike-ko-tjod6u2RpiU-unsplash.jpg);
+    background-size: cover;
+    width: 100%;
+    position: relative;
+    display: flex;
+}
+.card {
+    border: 2px white #fafafa10;
+    border-radius: 3%;
+    /* width: 40rem;
+    height: 30rem; */
+    width: 20rem;
+    height: 25rem;
+    margin: 0 auto; 
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 20%;
+    left: 13%; 
+}
+.glass-effect{
+    background-color: var(--glass-effect);
+    backdrop-filter: blur(0.4rem);   
+}
+
+.quotation-mark {
+    width: 20%;
+    position: absolute;
+    top: -20px; 
+    right: -20px; 
+    text-shadow: 2px 5px #000;
+    z-index: 1; 
+} 
+/* Polaroid */
+.polaroid {
+    position: relative;
+    width: 150px;
+    padding: 15px;
+    background-color:var(--color-smoke);  
+    top: 35%;
+    left: 10px;
+    border-radius: 10px;
+    filter: grayscale(60%); 
+  }
+
+.polaroid img {
+    width: 100%;
+    border-radius: 10px;
+  }
+.polaroid p{
+    font-family: var(--font-family-four);
+    font-size: 0.9rem;
+    color: var(--color-secundary);
+    text-align: center;
+    top: 15%;
+} 
+.section-one-text {
+    position: absolute;
+    width: 250px;
+    left: 35%;
+    top: 30%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.section-one-text h3 {
+    font-family: var(--font-family-three);
+    color: var(--color-secundary);   
+    font-size: 15px;
+}
+.section-one-text p{
+    font-family: var(--font-family-two);
+    font-size: 14px;
+    color: var(--color-secundary);   
+    justify-content: center;   
+    padding: 5px 10%;     
+} 
+
+
+
+.footer{
+    background-color: black;
+}
