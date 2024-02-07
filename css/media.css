@@ -126,10 +126,11 @@ nav ul {
     width: 20rem;
     height: 25rem;
     margin: 0 auto; 
-   
+    align-items: center;
+    justify-content: center;
     position: absolute;
     top: 20%;
-    left: 11%; 
+    left: 13%; 
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 .glass-effect{
@@ -144,7 +145,6 @@ nav ul {
     right: -5px; 
     text-shadow: 2px 5px #000;
     z-index: 1;
-    
     
 } 
 /* Polaroid */
@@ -207,7 +207,6 @@ nav ul {
     background-image: url(../assests/images/bblack.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    position: relative;
 }
 
 .footer-link a,
@@ -219,10 +218,6 @@ nav ul {
     font-family: Arial, Helvetica, sans-serif;
     padding: 0 10px;
     color: rgb(255, 250, 250);
-}
-.footer p{
-    justify-content: flex-end;
-    padding-right: 50px;
 }
 
 /* Media Querys */
@@ -236,9 +231,6 @@ nav ul {
     .section-one-text p {
         padding: 10px 24%;
         align-self: flex-end;
-    }
-    .footer{
-        height: 30px;
     }
 }
 @media screen and (mix-width: 320px) {
