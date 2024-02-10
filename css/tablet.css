@@ -1,0 +1,29 @@
+/* Haro and navbar */
+
+.container-hero h1{
+    font-size: 3.5rem;
+    left: 7%;
+}
+.withe-line{
+    left:23%;
+    top: 43%;
+}
+
+.intro p {
+    font-size: 1.2rem;
+    left: 18%;
+    padding: 0 20%;
+}
+
+.home a,
+.navbar-links li a {
+    font-size: 1rem;
+}
+.home a,
+.navbar-links li a {
+    width: 15%;
+}
+
+.menu-icon i{
+    padding: 0 25px;
+}

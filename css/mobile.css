@@ -59,7 +59,8 @@
     justify-content: flex-end;    
     gap: 10px;
     height: 100%;
-    padding: 20px;        
+    padding: 20px;
+            
 }
 .navbar-links{
     display: none;
@@ -106,7 +107,7 @@ nav ul {
 #navbar:target .open{
     display: none;
 }
-#menu:target .close{
+#navbar:target .close{
     display: block;   
 }
 
@@ -225,10 +226,11 @@ nav ul {
     padding-right: 50px;
 }
 
+
 /* Media Querys */
-@media screen and (mix-width: 375px) {
+@media screen and (min-width: 375px) {
     .withe-line{
-        left: 26%;
+        left: 22%;
     }
     .card glass-effect{
         left: 8%;
@@ -240,22 +242,29 @@ nav ul {
     .footer{
         height: 30px;
     }
+    .container-hero h1{
+        left: auto;
+
+    }
 }
-@media screen and (mix-width: 320px) {
-    .quotation-mark{
-  
+@media screen and (max-width: 320px) {
+    .withe-line{
+        display: none;
+    }
+    .quotation-mark{  
         left: 4%;
         width: 15%;
         right: -13px;
         top: -15px;
-
     }
     .withe-line{
         display: none;
-    }
-    
+    }    
     .card glass-effect {
         width: 280px;
+    }
+    .hero{
+        width: 100%;
     }
 }
 
