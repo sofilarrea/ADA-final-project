@@ -34,8 +34,8 @@
     --glass-effect: #fafafa10;
     --color-smoke: #84837D;
     --font-size-p: 1.2rem;
-    --font-size-h1: 4.5rem;
-    scroll-behavior: none;
+    --font-size-h1-mobile: 2.2rem;
+    --scroll-behavior: none;
  
 }
 .html{

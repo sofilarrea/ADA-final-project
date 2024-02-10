@@ -90,6 +90,7 @@ nav {
 nav ul {
     list-style-type: none;
 }
+
 /* Open and close menu */
 .close {
     display: none;
@@ -111,7 +112,6 @@ nav ul {
 #navbar:target .close{
     display: block;   
 }
-
 
 /* Section One */
 .section-one{
@@ -148,7 +148,8 @@ nav ul {
     z-index: 1;
     
     
-} 
+}
+
 /* Polaroid */
 .polaroid {
     position: relative;
@@ -271,66 +272,34 @@ nav ul {
 
 
 /* ---------------------------------- */
-/* Contact Page */
+/* --------- Contact Page ---------- */
 /* ---------------------------------- */
-.hero-contact {
-    background-color: tomato;
-    margin: 0;
-    padding: .1px;
+
+
+/* Hero Section */
+.hero-contact{
     background-size: cover;
-    background-attachment: fixed;
-    top: 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100dvh;
     position: relative;
     display: flex;
-}
-
-/*
-.video-contact-section{
-    width: 100%;
-    height: 100%;
+    background-attachment: fixed;
     padding: .1px;
-    background-size: cover;
-}
-/*
-
- .video-contact-section{
-    position: absolute;
-    top: 0;
-    left: 0;
     width: 100%;
-    height: 100%;
-    object-fit: cover;
-}*/
-/*.container-hero-contact-section h1{
-    font-size: var(--font-size-h1);
-    display: flex;  
-    position: absolute;
-    top: 20%;
-    left: 18%;   
-    color: var(--color-secundary)    
 }
-.withe-line-contactc{
-    width: 15%;
-    height: 1px;
-    background-color: var(--color-secundary);
+.video-contact-section{
     position: absolute;
-    top: 55%;
-    left: 35%;
-    transform: rotate(-90deg);
-} 
-.contact-me-text p{ 
+    width: 100%;
+    object-fit: cover;
+    height: 100dvh;
+}
+.container-hero-contact-section h1{
+    font-size: 2.2rem;
+    opacity: 1;
+    position: absolute;
     color: var(--color-secundary);
-    line-height: 1.5;
-    position: absolute;
-    z-index: 1;
-    margin-left: 30%;
-    margin-top: 25%;
-    margin-bottom: 10%;
-    padding: 10px 20%;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}   */
-
-
-.hero-life{
-    background-color: black;
+    transform: rotate(-90deg);
+    top: 20%;
+    left: 6%;
 }
