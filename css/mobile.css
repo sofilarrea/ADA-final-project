@@ -13,28 +13,27 @@
 
 }
 .container-hero h1 {
-    font-size: 2.2rem;
+    font-size: 2.4rem;
     display: flex;  
     position: absolute;
-    top: 20%;
-    left: 6%;
+    top: 16%;
+    left: auto;
     transform: rotate(-90deg);
     color: var(--color-secundary)
     
 }
 .withe-line{
-    width: 20%;
     height: 1px;
     background-color: var(--color-secundary);
     position: absolute;
-    top: 30%;
-    left: 23%;
-    transform: rotate(-90deg); 
-    
+    width: 30%;
+    left: 18%;
+    top: 20%;
+    transform: rotate(-90deg);    
 }
 .intro p{
     position: absolute;
-    font-size: 14px;
+    font-size: 1.2rem;
     font-family: var(--font-family-two);
     color: var(--color-secundary);
     left: 33%;
@@ -127,8 +126,7 @@ nav ul {
     border-radius: 3%;    
     width: 20rem;
     height: 25rem;
-    margin: 0 auto; 
-   
+    margin: 0 auto;   
     position: absolute;
     top: 20%;
     left: 11%; 
@@ -294,12 +292,14 @@ nav ul {
     object-fit: cover;
     height: 100dvh;
 }
-.container-hero-contact-section h1{
-    font-size: 2.2rem;
-    opacity: 1;
+
+.contact-me-text p {
     position: absolute;
+    font-size: 1.5rem;
+    font-family: var(--font-family-two);
     color: var(--color-secundary);
-    transform: rotate(-90deg);
-    top: 20%;
-    left: 6%;
+    left: 33%;
+    top: 5%;
+    bottom: 10%;
+    padding: 33px 8%; 
 }
