@@ -61,12 +61,20 @@
 /* --------- Contact Page ---------- */
 /* ---------------------------------- */
 
-
+/* Navbar */
+.navbar-links a i {
+    font-size: 28px; 
+}
+.home a{
+    font-size: 28px;
+}
 .half-section figure:last-of-type img {
     bottom: -50%;
     right: 0;
     left: auto;
     width: 400px;
     height: 652px;
-
+    animation: pulse;
+    animation-duration: 4s;
 }
+
