@@ -91,9 +91,7 @@ nav ul {
 }
 
 /* Open and close menu */
-.close {
-    display: none;
-}
+
 #navbar:target .navbar-links{
     display: flex;
     flex-direction: column;
@@ -111,7 +109,9 @@ nav ul {
 #navbar:target .close{
     display: block;   
 }
-
+.close {
+    display: none;
+}
 /* Section One */
 .section-one{
     height: 100dvh;    
@@ -209,6 +209,7 @@ nav ul {
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+    margin-top: auto;
 }
 
 .footer-link a,
@@ -279,30 +280,78 @@ nav ul {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 100dvh;
+    height: 80dvh;
     position: relative;
     display: flex;
     background-attachment: fixed;
     padding: .1px;
     width: 100%;
+    overflow: hidden;
+    bottom: -20px;
 }
 .video-contact-section{
     position: absolute;
     width: 100%;
     object-fit: cover;
-    height: 100dvh;
+    height: 80dvh;
+    top: -10px;
+   
 }
-
-.contact-me-text p {
+.container-hero-contact-section h1{
+    font-size: 2.2rem;
+    opacity: 1;
     position: absolute;
-    font-size: 1.5rem;
-    font-family: var(--font-family-two);
     color: var(--color-secundary);
-    left: 33%;
-    top: 5%;
-    bottom: 10%;
-    padding: 33px 8%; 
+    transform: rotate(-90deg);
+    top: 20%;
+    left: 6%;
+}
+/* Section Contact Me */
+.section-contact-me {
+    position: relative;
+    overflow: hidden;
+    height: 100dvh;
+    background-color: var(--color-primary);
+}
+.half-section {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: flex-start; /* Align items to the top */
 }
 
+.texture-black, .texture-photo {
+    width: 100%; 
 
-/* Section Contact Me */
+}
+
+.texture-photo {
+    z-index: 1; /* Align to the top */
+}
+
+.form-contact {
+    width: 100%;
+    margin-top: 20px; /* Adjust as needed */
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media only screen and (min-width: 768px) {
+    .section-contact-me {
+        flex-direction: row;
+    }
+
+    .texture-black-container,
+    .texture-photo-container {
+        width: 50%;
+    }
+
+    .form-contact {
+        width: 50%;
+        margin-top: 0; /* Remove margin */
+        margin-left: 20px; /* Adjust spacing between form and images */
+    }
+}

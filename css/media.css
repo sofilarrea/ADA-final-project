@@ -316,3 +316,33 @@ nav ul {
 .hero-life{
     background-color: black;
 }
+
+
+
+
+
+
+
+.half-section {
+    display: flex;
+    position: relative; 
+    float: right;
+    justify-content: center;
+    align-items: center;
+
+}
+.texture-black{
+    width: 100%;
+}
+.texture-photo{
+    width: 250px;
+    height: 350px;
+    opacity: 0.4;
+    z-index: 1;
+}
+
+.half-section-two{
+    background-color: var(--color-primary);
+    float: left;
+    width: 50%;
+} 
