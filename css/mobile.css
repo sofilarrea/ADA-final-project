@@ -310,7 +310,7 @@ nav ul {
 .contact{
     top: 35%;
 }
-/* Section Contact Me */
+/* Section Texture black and photos */
 .section-contact-me {
     background-color: var(--color-primary);
     width: 100%;
@@ -318,20 +318,22 @@ nav ul {
     flex-direction: column;
     overflow: hidden;
 }
+.section-contact-me h2 {
+    display: none;
+}
 .half-section {
     position: relative;
     display: flex;
-    height: 80%; /* Adjust the height as needed */
-    justify-content: center; /* Center the child elements horizontally */
-    align-items: center; /* Center the child elements vertically */
+    width: 100%;
+    height: 100dvh;
+    justify-content: center; 
+    align-items: center; 
 }
 
 .half-section figure:first-of-type img {
     position: absolute;
     top: 0;
-    right: 0;
-    /* Optionally, you can set width: auto; to maintain the image's aspect ratio */
-}
+    right: 0;}
 
 .half-section figure:last-of-type img {
     position: absolute;
@@ -342,24 +344,23 @@ nav ul {
     height: 350px;
 }
 /* Section Form */
+
 .half-section-two {
     display: flex;
-    justify-content: center; 
-    align-items: center;
     width: 100%;
-    height: 100dvh; 
+    height: 50%;
+    position: relative; 
 }
 
 .form-contact {
-    width: 80%; 
+    width: 100%;
     padding: 50px; 
     background-color: var(--color-primary);   
     position: relative; 
-    z-index: 1; 
-    margin-top: 80%;
+   
     display: flex;
-    margin-top: calc(50vh - 50%);
-    height: 100vh;
+   
+    height: 50%;
 }
 .form {
     margin: 0;
