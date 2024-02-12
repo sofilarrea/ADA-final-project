@@ -55,3 +55,18 @@
 .polaroid p {
     font-size: 1.2rem;
 }
+
+
+/* ---------------------------------- */
+/* --------- Contact Page ---------- */
+/* ---------------------------------- */
+
+
+.half-section figure:last-of-type img {
+    bottom: -50%;
+    right: 0;
+    left: auto;
+    width: 400px;
+    height: 652px;
+
+}

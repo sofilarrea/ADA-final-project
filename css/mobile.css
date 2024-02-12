@@ -313,9 +313,30 @@ nav ul {
 /* Section Contact Me */
 .section-contact-me {
     background-color: var(--color-primary);
-}
-.half-section figure.first-of-type{
     width: 100%;
-    justify-content: center;
+    height: 100vh;
+    flex-direction: column;
+}
+.half-section {
+    position: relative;
     display: flex;
+    height: 80%; /* Adjust the height as needed */
+    justify-content: center; /* Center the child elements horizontally */
+    align-items: center; /* Center the child elements vertically */
+}
+
+.half-section figure:first-of-type img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    /* Optionally, you can set width: auto; to maintain the image's aspect ratio */
+}
+
+.half-section figure:last-of-type img {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    opacity: 0.4;
+    width: 250px;
+    height: 350px;
 }
