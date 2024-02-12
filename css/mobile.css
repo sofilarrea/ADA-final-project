@@ -448,6 +448,9 @@ input[type="submit"]:visited {
 /* ---------------------------------- */
 /* -------- Life Sketch Page -------- */
 /* ---------------------------------- */
+
+
+/* Hero Section */
 .hero-life{
     width: 100%;
     height: 100vh;
@@ -458,12 +461,17 @@ input[type="submit"]:visited {
     justify-content: center;
     align-items: center;
 }
-nav {
-    align-self: flex-start;
+
+.container-hero.life h1{
+    left: 3%;
 }
-.menu-icon{
-    font-size: 1.9rem;
+
+.withe-line.life{
+    width: 30%;
+    left: 18%;
+    top: 27%;
 }
+
 .intro.life p {
     font-size: 1.9rem;
     top: 14%;
@@ -472,7 +480,12 @@ nav {
     left: 33%;
     font-weight: bold;
 }
-.withe-line.life{
-    width: 20%;
-    left: 23%;
+
+
+/* Navabar Section */
+nav {
+    align-self: flex-start;
+}
+.menu-icon{
+    font-size: 1.9rem;
 }
