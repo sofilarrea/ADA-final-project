@@ -636,6 +636,7 @@ nav {
     transform: translateY(-50%); /* Center navbar vertically */
     display: flex;
     align-items: center;
+    width: 90%;
 }
 .navbar-portfolio ul li a {
     text-decoration: none;  
@@ -657,38 +658,32 @@ nav {
 .menu-portfolio .close-icon {
     display: none;
 }
-/* Navbar Links */
-#navbar-portfolio ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    flex-direction: row;
-}
-
-#navbar-portfolio ul li {
-    display: inline-block;
-    margin-right: 20px;
-}
-
-#navbar-portfolio ul li:last-child {
-    margin-right: 0;
-}
-
-#navbar-portfolio ul li a {
+/* List Port ul li navbar class */
+.list-port  li{
     text-decoration: none;
-    color: white;
-    font-weight: bold;
+    color: var(--color-secundary);
+    font-family: var(--font-family-one);
+    font-size: 0.9rem;
+    font-weight:bolder;
+    text-transform: uppercase;
+    opacity: 0.5;
+    letter-spacing: 1px;   
+}
+.list-port li a{
+    color: var(--color-secundary);
+    font-weight: bolder;
 }
 
 /* Open and close menu */
 #navbar-port:target .list-port {
     display: flex;
     position: absolute;
-    top: 100%;
-    left: 0;
+    flex-direction: column;
     width: 100%;
+    gap: 20px;    
     padding: 10px;
-    background-color: red;
+    background-color: rgba(10, 9, 9, 0.956);
+    text-align: center;
 }
 
 #navbar-port:target .open-icon {
