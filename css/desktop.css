@@ -1,9 +1,20 @@
-/* Hero Navbar */ 
+/* Hero  */ 
 .withe-line{
-    width: 22%;
+    width: 19%;
+    left: 20%;
+    top: 43%;
 }
 .intro p {
-    font-size: 1.3rem;
+    font-size: 1.4rem;
+    top: 15%;
+}
+.container-hero h1{
+    top: 28%;
+}
+/* Navbar */
+nav {
+    background-color: rgba(0, 0, 0, 0.301);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 .menu-icon{
     display: none;
@@ -12,7 +23,17 @@
     display: block;
     display: flex;
     align-items: center;
+    gap: 20px;
+    box-shadow: rgb(0 0 250);
 }
+.home .h:hover{
+    background-color: red;
+
+}
+.navbar-links li a:hover{
+    color:rgb(130, 11, 11)
+}
+
 /* Section One */
 .polaroid{
     top: 24%;
@@ -22,13 +43,96 @@
     left: 43%;
 }
 
+.section-one-text h3{
+    font-size: 2.5rem;
+    margin-bottom: 0;
+}
+.section-one-text p{
+    padding: 0 3px;
+    font-size: 1rem;
+}
+
+/* Media Querys */
+@media screen and (min-width: 1444px) {
+    .intro p {
+        font-size: 2rem;
+    }
+    .container-hero h1{
+        font-size: 5rem;
+    }
+    .quotation-mark {
+        width: 19%;
+    }
+    .card {
+        height: 550px;        
+        width: 650px;
+    }
+    .polaroid{
+        right: 350%;
+    }
+    .section-one-text{
+        left: 50%;
+    }
+
+}
 
 
+/* ---------------------------------- */
+/* --------- Portfolio Page ---------- */
+/* ---------------------------------- */
 
 
+/* Navbar */
 
+.portfolio li{
+    font-size: 4rem;
+    
+}
 
+.Jobs-Front hr,
+.Jobs-Back hr {
+    width: 45%;
+    height: 1;
+}
 
+.bodega p,
+.aceite p,
+.africa p {
+    font-size: 1.9rem;
+}
+.bodega figure img,
+.aceite figure img,
+.africa figure img {
+    max-width: 70%;
+    max-height: 60%;
+    
+}
 
-
-
+/* Media Querys */
+@media screen and (max-width: 1440px){
+    .portfolio li{
+        font-size: 7rem;
+    }
+    .Jobs-Front h2,
+    .Jobs-Back h2 {
+        font-size: 4rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .Jobs-Back br,
+    .Jobs-Front br {
+        display: none;
+    }
+    .bodega p,
+    .aceite p,
+    .africa p {
+        font-size: 2.3rem;
+    }
+    .bodega figure img,
+    .aceite figure img,
+    .africa figure img {
+        max-width: 60%;
+        max-height: 70%;
+    }
+}

@@ -27,11 +27,11 @@
     background-color: var(--color-secundary);
     position: absolute;
     width: 30%;
-    left: 18%;
-    top: 20%;
+    left: 16%;
+    top: 26%;
     transform: rotate(-90deg);    
 }
-.intro p{
+.intro p {
     position: absolute;
     font-size: 1.2rem;
     font-family: var(--font-family-two);
@@ -59,7 +59,7 @@
     justify-content: flex-end;    
     gap: 10px;
     height: 100%;
-    padding: 20px;
+    padding: 15px;
             
 }
 .navbar-links{
@@ -97,8 +97,8 @@ nav ul {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    /* width: 100%; */ /*Me ocupa la pantalla */
-    height: 100vh;
+    width: 50%;  /*Me ocupa la pantalla */
+    
     padding: 20px;
     margin: 0;
     background-color: rgba(0, 0, 0, 0.838);
@@ -233,7 +233,10 @@ nav ul {
 /* Media Querys */
 @media screen and (min-width: 375px) {
     .withe-line{
-        left: 22%;
+        left: 18%;
+    }
+    .intro p{
+        font-size: 1rem;
     }
     .card glass-effect{
         left: 8%;
@@ -618,12 +621,11 @@ nav {
 .portfolio li.rotate {
     transform: rotate(90deg);
     margin-bottom: 0;
-    margin-top: 0;
-    
+    margin-top: 0;    
 }
-.portfolio li.rotate:hover.swirl-in-fwd {
-	-webkit-animation: swirl-in-fwd 0.6s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
-	        animation: swirl-in-fwd 0.6s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+.portfolio li.rotate.animate__slideInLeft {
+    animation: slideInLeft 1s;
+
 }
 .portfolio li.itemo{
     margin: 25px 0;
@@ -634,11 +636,12 @@ nav {
     position: absolute;
     top: 50%;
     left: 10px;
-    transform: translateY(-50%); /* Center navbar vertically */
+    transform: translateY(-50%);
     display: flex;
     align-items: center;
     width: 90%;
     position: fixed;
+    z-index: 1;
 }
 .navbar-portfolio ul li a {
     text-decoration: none;  
@@ -701,7 +704,7 @@ nav {
 .Jobs-Front,
 .Oil,
 .Jobs-Back {
-    background-image:linear-gradient(rgba(0, 0, 0, 0.929)50%, rgba(2, 1, 2, 0.792)), url('/assests/images/tela.jpg'); 
+    background-image: linear-gradient(rgba(0, 0, 0, 0.773), rgba(0, 0, 0, 0.4)), url('/assests/images/tela.jpg');
     background-position: no-repeat;
     background-size: cover;
     height: 100dvh;
@@ -746,6 +749,8 @@ nav {
 .dioliva:link,
 .africa:link {
     color: rgb(7, 7, 243);
+    text-transform: uppercase;
+    font-size: 1.2rem;
 }
 .cincosentidos:visited,
 .dioliva:visited,
@@ -775,3 +780,19 @@ nav {
     display: none;
 }
 
+
+/* Media Querys */
+@media screen and (min-width: 320px) {    
+    .bodega p,
+    .aceite p,
+    .africa p{
+        padding: 0 10px;
+    }
+}
+@media screen and (min-width: 375px) {    
+    .bodega p,
+    .aceite p,
+    .africa p{
+        padding: 0 10px;
+    }
+}

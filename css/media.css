@@ -1,0 +1,41 @@
+/* Navbar */
+.navbar-portfolio {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Align navbar to the top */
+    padding: 20px;
+}
+
+.menu-portfolio {
+    display: flex;
+    align-items: center;
+}
+
+.container-list-port {
+    display: flex;
+}
+
+.list-port {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.list-port li {
+    margin-right: 20px;
+}
+
+.list-port li:last-child {
+    margin-right: 0;
+}
+
+.list-port a {
+    text-decoration: none;
+    color: var(--color-tertiary);
+    transition: color 0.3s; /* Add transition effect */
+}
+
+.list-port a:hover {
+    color: var(--color-secondary); /* Change color on hover */
+}
