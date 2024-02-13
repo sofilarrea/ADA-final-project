@@ -25,6 +25,7 @@
 :root {    
     --color-primary: #000;
     --color-secundary: #fff;
+    --color-tertiary: #6F6F6F;
     --font-family-one: 'Roboto Flex', sans-serif;
     --font-family-two: 'Inter Tight', sans-serif;
     --font-family-three: 'Playfair Display', serif;
