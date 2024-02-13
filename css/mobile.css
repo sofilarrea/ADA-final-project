@@ -104,6 +104,7 @@ nav ul {
     background-color: rgba(0, 0, 0, 0.838);
     justify-content: center;  
 }
+
 #navbar:target .open{
     display: none;
 }
@@ -579,7 +580,7 @@ nav {
 
 /* Header Section */
 .hero-portfolio{
-    background-image:linear-gradient( to top, rgba(0, 0, 0, 0.542)50%, rgba(62, 9, 54, 0.241)), url('/assests/images/porfolio3.jpg');
+    background-image:linear-gradient( to top, rgba(0, 0, 0, 0.542)50%, rgba(10, 2, 9, 0.241)), url('/assests/images/porfolio3.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -609,15 +610,90 @@ nav {
 .portfolio li{
     font-size: 3rem;
     color: var(--color-secundary);
-    text-align: center;
-    
+    opacity: 0.7;
+    text-align: center;    
     transition: transform 0.3s;
 }
 .portfolio li.rotate {
     transform: rotate(90deg);
-    margin-bottom: 00;
-  
+    margin-bottom: 0;
+    margin-top: 0;
+    
+}
+.portfolio li.rotate:hover.swirl-in-fwd {
+	-webkit-animation: swirl-in-fwd 0.6s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+	        animation: swirl-in-fwd 0.6s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
 }
 .portfolio li.itemo{
     margin: 25px 0;
+}
+
+/* Navbar Styles */
+.navbar-portfolio {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%); /* Center navbar vertically */
+    display: flex;
+    align-items: center;
+}
+.navbar-portfolio ul li a {
+    text-decoration: none;  
+}
+.navbar-portfolio ul li{
+    list-style: none;
+}
+
+.menu-portfolio a {
+    display: flex;    
+    justify-content: space-between;
+    height: 40px;
+    text-decoration: none;
+    font-size: 40px;
+}
+.list-port {
+    display: none;
+}
+.menu-portfolio .close-icon {
+    display: none;
+}
+/* Navbar Links */
+#navbar-portfolio ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    flex-direction: row;
+}
+
+#navbar-portfolio ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+#navbar-portfolio ul li:last-child {
+    margin-right: 0;
+}
+
+#navbar-portfolio ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+/* Open and close menu */
+#navbar-port:target .list-port {
+    display: flex;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    background-color: red;
+}
+
+#navbar-port:target .open-icon {
+    display: none;
+}
+#navbar-port:target .close-icon {
+    display: block;
 }

@@ -346,3 +346,39 @@ nav ul {
     float: left;
     width: 50%;
 } 
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Open and close menu */
+
+#navbar:target .navbar-links{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    /* width: 100%; */ /*Me ocupa la pantalla */
+    height: 100vh;
+    padding: 20px;
+    margin: 0;
+    background-color: rgba(0, 0, 0, 0.838);
+    justify-content: center;  
+}
+
+#navbar:target .open{
+    display: none;
+}
+#navbar:target .close{
+    display: block;   
+}
+.close {
+    display: none;
+}
