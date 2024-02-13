@@ -206,7 +206,7 @@ nav ul {
     align-items: center;
     padding: 10px 10px;
     height: 60px;
-    background-image: url(../assests/images/bblack.jpg);
+    background-image: url(../assests/images/black\ and\ withe.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
@@ -522,6 +522,11 @@ nav {
     letter-spacing: 32px;
     text-align: center;
 }
+.programmer h2{
+    margin-top: 20px;
+    font-size: 1.5rem;
+    letter-spacing: 28px;
+}
 .dentistry p,
 .programmer p{
     font-size: 0.9rem;
@@ -562,4 +567,57 @@ nav {
     width: 250px;
     height: 450px;
     object-fit: cover;
+}
+
+
+
+
+
+/* ---------------------------------- */
+/* --------- Porfolio Page ---------- */
+/* ---------------------------------- */
+
+/* Header Section */
+.hero-portfolio{
+    background-image:linear-gradient( to top, rgba(0, 0, 0, 0.542)50%, rgba(62, 9, 54, 0.241)), url('/assests/images/porfolio3.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100dvh;
+    padding: 0.1px;
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;
+} 
+.portfolio{
+    display: flex;
+    flex-direction:column;
+}
+.portfolio ul {
+    position: relative;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+}
+.portfolio li{
+    font-size: 3rem;
+    color: var(--color-secundary);
+    text-align: center;
+    
+    transition: transform 0.3s;
+}
+.portfolio li.rotate {
+    transform: rotate(90deg);
+    margin-bottom: 00;
+  
+}
+.portfolio li.itemo{
+    margin: 25px 0;
 }
