@@ -224,8 +224,22 @@ nav {
         font-size: 2.5rem;
         padding: 10px;
     }
-   
+    .half-section figure:first-of-type img{
+        width: 800px;
+    }
+    .half-section figure:last-of-type img{
+        width: 400px;
+        height: 600px;
+        right: 23%;
+    }
+    .navbar-links li a{
+        gap: 40px;
+    }
+    .intro-contact p {
+        font-size: 2.9rem;
+    }
 }
+
 
 
 
