@@ -214,7 +214,7 @@ nav ul {
     align-items: center;
     padding: 10px 10px;
     height: 60px;
-    background-image: url(../assests/images/black\ and\ withe.jpg);
+    background-image: url('../assests/images/lines.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
@@ -439,43 +439,19 @@ input[type="submit"]:visited {
 /* ---------------------------------- */
 /* -------- Life Sketch Page -------- */
 /* ---------------------------------- */
-
-
-/* Hero Section */
-.hero-life{
-    width: 100%;
-    height: 100vh;
+.hero{
     background-image: url('/assests/images/circulo.jpg'); 
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
+    height: 100dvh;
+    position: relative;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    bottom: -20px;
-    padding: .1px;
     background-attachment: fixed;
+    padding: .1px;
+    width: 100%; 
+
 }
-
-.container-hero.life h1{
-    left: 3%;
-}
-
-.withe-line.life{
-    width: 30%;
-    left: 18%;
-    top: 27%;
-}
-
-.intro.life p {
-    font-size: 1.9rem;
-    top: 14%;
-    position: absolute;
-    padding: 0% 28px;
-    left: 33%;
-    font-weight: bold;
-}
-
-
 
 /* Dentistry Section */
 .dentistry,
