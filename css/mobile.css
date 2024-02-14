@@ -22,7 +22,8 @@
     color: var(--color-secundary)
     
 }
-.withe-line{
+.withe-line,
+.withe-line-contact {
     height: 1px;
     background-color: var(--color-secundary);
     position: absolute;
@@ -31,7 +32,8 @@
     top: 26%;
     transform: rotate(-90deg);    
 }
-.intro p {
+.intro p,
+.intro-contact p {
     position: absolute;
     font-size: 1.2rem;
     font-family: var(--font-family-two);
@@ -60,6 +62,7 @@
     gap: 10px;
     height: 100%;
     padding: 15px;
+    
             
 }
 .navbar-links{
@@ -67,6 +70,7 @@
     padding: 0;
     margin: 0;
 }
+
 .home a,
 .navbar-links li a {
     text-decoration: none;
@@ -288,30 +292,27 @@ nav ul {
     height: 100dvh;
     position: relative;
     display: flex;
-    background-attachment: fixed;
-    padding: .1px;
+    background-attachment: fixed;    
     width: 100%;
     overflow: hidden;
-    bottom: -20px; 
-}
-.video-contact-section{
-    position: absolute;
-    width: 100%;
-    object-fit: cover;
-    height: 80dvh;  
-    
-   
-}
-.container-hero-contact-section h1{
-    font-size: 2.2rem;
-    opacity: 1;
+} 
+
+.container-hero h1{
+    font-size: 2rem;    
     position: absolute;
     color: var(--color-secundary);
     transform: rotate(-90deg);
     top: 26%;
     left: 6%;
+    opacity: 1;
 }
-.contact{
+.intro-contact p {
+    left: 40%
+}
+.withe-line-contact{
+    left: 24%;
+}
+.contact {
     top: 35%;
 }
 /* Section Texture black and photos */
