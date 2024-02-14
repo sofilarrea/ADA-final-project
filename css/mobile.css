@@ -1,6 +1,6 @@
-/* Hero Section */
+/* Hero Sectipageon */
 .hero{
-    background-image: url(../assests/images/jeremy-bishop-rqWoB4LFgmc-unsplash.jpg); 
+    background-image: url('../assests/images/jeremy-bishop-rqWoB4LFgmc-unsplash.jpg'); 
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -439,7 +439,7 @@ input[type="submit"]:visited {
 /* ---------------------------------- */
 /* -------- Life Sketch Page -------- */
 /* ---------------------------------- */
-.hero{
+.hero-life{
     background-image: url('/assests/images/circulo.jpg'); 
     background-size: cover;
     background-position: center;
