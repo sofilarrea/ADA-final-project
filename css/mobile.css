@@ -52,7 +52,8 @@ nav {
     flex-wrap: wrap;
     width: 100%;
     justify-content: space-between; 
-    z-index: 1;   
+    z-index: 1; 
+      
 }
 
 .home {
@@ -666,11 +667,11 @@ input[type="submit"]:visited {
 }   
 
 .cincosentidos:link,
-.diolivdiolivaa:link,
+.dioliva:link,
 .africa:link {
     color: rgb(7, 7, 243);
     text-transform: uppercase;
-    font-size: 0.5rem;
+    font-size: 0.9rem;
 }
 .cincosentidos:visited,
 .dioliva:visited,

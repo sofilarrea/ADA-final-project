@@ -238,6 +238,7 @@ nav {
     .intro-contact p {
         font-size: 2.9rem;
     }
+   
 }
 
 
@@ -248,40 +249,41 @@ nav {
 /* ---------------------------------- */
 
 
-/* Navbar */
 
-.portfolio li{
-    font-size: 4rem;
-    
+/* Header letters in the hero*/
+.portfolio ul li{
+    font-size: 3.1rem;    
 }
 
 .Jobs-Front hr,
 .Jobs-Back hr {
-    width: 45%;
-    height: 1;
+    width: 35%;  
 }
+.Jobs-Front h2,
+.Jobs-Back h2 {
+    font-size: 2rem;
+} 
 
-.bodega p,
-.aceite p,
-.africa p {
-    font-size: 1.9rem;
-}
 .bodega figure img,
 .aceite figure img,
 .africa figure img {
-    max-width: 70%;
-    max-height: 60%;
+    max-width: 50%;
+    max-height: 50%;
     
 }
-
+.bodega p,
+.aceite p,
+.africa p{
+    font-size: 1.3rem;
+}
 /* Media Querys */
-@media screen and (max-width: 1440px){
+@media screen and (min-width: 1440px){
     .portfolio li{
         font-size: 7rem;
     }
     .Jobs-Front h2,
     .Jobs-Back h2 {
-        font-size: 4rem;
+        font-size: 2rem;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -293,7 +295,7 @@ nav {
     .bodega p,
     .aceite p,
     .africa p {
-        font-size: 2.3rem;
+        font-size: 2rem;
     }
     .bodega figure img,
     .aceite figure img,
@@ -301,4 +303,52 @@ nav {
         max-width: 60%;
         max-height: 70%;
     }
+    .cincosentidos:link,
+    .dioliva:link,
+    .africa:link {
+    color: rgb(7, 7, 243);
+    text-transform: uppercase;
+    font-size: 1rem;
+}
+
+}
+@media screen and (min-width: 2560px) {
+    .portfolio ul li{
+        font-size: 10rem;
+    }
+    /* Navbar */
+    .home a {
+        font-size: 4rem;
+    }
+
+    .home a:hover{
+        background-color: var(--color-secundary);
+        color: var(--color-primary);
+        cursor:pointer
+    }
+    .navbar-links li a{
+        font-size: 3rem;
+    }
+    .Jobs-Front h2,
+    .Jobs-Back h2{
+        font-size: 5rem;
+    } 
+
+    .bodega figure img,
+    .aceite figure img,
+    .africa figure img {
+        width: 60%;
+    }
+    .bodega p,
+    .aceite p,
+    .africa p {
+        font-size: 3.3rem;
+    }
+    .cincosentidos:link,
+    .dioliva:link,
+    .africa:link {
+    color: rgb(7, 7, 243);
+    text-transform: uppercase;
+    font-size: 1.9rem;
+}
 }
