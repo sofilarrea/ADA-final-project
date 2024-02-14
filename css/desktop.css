@@ -192,7 +192,9 @@ nav {
 
 .half-section figure:last-of-type img {
     position: absolute;
-    bottom: 0;   
+    right: 15%;
+    bottom: 17%;
+    left: auto;
     opacity: 0.4;
     width: 250px;
     height: 350px;
