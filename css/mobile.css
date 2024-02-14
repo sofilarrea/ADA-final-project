@@ -475,7 +475,8 @@ input[type="submit"]:visited {
 }
 
 .dentistry h2,
-.programmer h2{  
+.programmer h2,
+.gallerytitle{  
     font-size: 1.9rem;    
     font-family: var(--font-family-three);
     color: var(--color-secundary);
@@ -498,23 +499,17 @@ input[type="submit"]:visited {
 }
 /* Gallery Section */
 .gallery{
-    width: 50%;
-    max-width: 1200px;
+    background-color: var(--color-smoke);
+    width: 100%;
+    max-width: 2560px;
     overflow: hidden;
     margin: 0 auto;
-    padding: 50px 0;
-}
-
-.gallerytitle{
-    font-size: 2rem;
-    margin-bottom: 1em;
-    text-align: center;
-    
+    padding: 30px 0;
 }
 
 .gallerycontainer{
     display: flex;
-    gap: 10px;
+    gap: 20px;
     flex-wrap: wrap;
 }
 
@@ -524,9 +519,11 @@ input[type="submit"]:visited {
 }
 
 .galleryimg{
-    width: 250px;
-    height: 450px;
+    width: 220px;
+    height: 350px;
     object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
 
 

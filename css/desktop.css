@@ -154,6 +154,7 @@ nav {
 /* ---------------------------------- */
 /* --------- Contact Page ---------- */
 /* ---------------------------------- */
+
 .withe-line-contact{
     width: 20%;
     top: 45%;
@@ -186,13 +187,13 @@ nav {
 
 
 .half-section figure:first-of-type img {
-    width: 450px;    
+    width: 350px;    
     top: 19%;
 }
 
 .half-section figure:last-of-type img {
     position: absolute;
-    right: 15%;
+    right: 5%;
     bottom: 17%;
     left: auto;
     opacity: 0.4;
@@ -351,4 +352,38 @@ nav {
     text-transform: uppercase;
     font-size: 1.9rem;
 }
+}
+/* ---------------------------------- */
+/* --------- Portfolio Page ---------- */
+/* ---------------------------------- */
+.dentistry h2,
+.programmer h2 {
+    font-size: 2.2rem;
+}
+.dentistry p,
+.programmer p{
+    font-size: 1.4rem;
+}
+.gallerycontainer{
+    justify-content: space-evenly;
+}
+
+@media screen and (min-width: 1440px){
+    .dentistry p,
+    .programmer p {
+    font-size: 1.9rem;
+    }
+
+}
+@media screen and (min-width: 2560px) {
+    .dentistry h2,
+    .programmer h2,
+    .gallerytitle {
+        font-size: 3.8rem;
+    } 
+    .dentistry p,
+    .programmer p {
+        font-size: 2.5rem;
+    }
+   
 }
