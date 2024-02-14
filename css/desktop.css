@@ -149,6 +149,72 @@ nav {
     }
 }
 
+
+
+/* ---------------------------------- */
+/* --------- Contact Page ---------- */
+/* ---------------------------------- */
+.withe-line-contact{
+    width: 20%;
+    top: 45%;
+}
+.intro-contact p{
+    top: 25%
+}
+.section-contact-me {
+    display: flex;
+    flex-direction: column;
+}
+
+.full-section {
+    display: flex;
+    flex-direction: row;
+}
+
+.form-contact {
+    flex: 5; 
+    float: right;
+}
+
+.half-section {
+    display: flex;
+    flex-direction: column;
+    flex: 1; 
+    float: left;
+}
+
+
+
+.half-section figure:first-of-type img {
+    width: 450px;    
+    top: 19%;
+}
+
+.half-section figure:last-of-type img {
+    position: absolute;
+    bottom: 0;   
+    opacity: 0.4;
+    width: 250px;
+    height: 350px;
+}
+
+@media screen and (min-width: 1440px) {
+    .half-section figure:first-of-type img{
+        position: relative;
+    }
+    .section-contact-me{
+        overflow: hidden;
+    }
+    .intro-contact p{
+        font-size: 2rem;
+    }
+}
+@media screen and (min-width: 2560px){
+
+}
+
+
+
 /* ---------------------------------- */
 /* --------- Portfolio Page ---------- */
 /* ---------------------------------- */

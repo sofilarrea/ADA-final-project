@@ -46,26 +46,35 @@
 
 
 /* Navbar Section */
+nav {  
+    display: flex;
+    position: fixed;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between; 
+    z-index: 1;   
+}
+
 .home {
     display: flex;   
     align-items: center;
     padding: 0 20px;
     height: 100%;    
 }
+
 .home a {
     padding: 20px 0;
 }
 
-.menu-icon{
+.menu-icon {
     display: flex;
     justify-content: flex-end;    
     gap: 10px;
     height: 100%;
     padding: 15px;
-    
-            
 }
-.navbar-links{
+
+.navbar-links {
     display: none;
     padding: 0;
     margin: 0;
@@ -77,44 +86,37 @@
     color: var(--color-secundary);
     font-family: var(--font-family-one);
     font-size: 0.9rem;
-    font-weight:bolder;
+    font-weight: bold;
     text-transform: uppercase;
     opacity: 0.5;
     letter-spacing: 1px;   
 } 
-nav {  
-    display: flex;
-    position:fixed;
-    flex-wrap: wrap;
-    width: 100%;
-    /* height: 60px;     */
-    justify-content: space-between; 
-    z-index: 1;   
-}
+
 nav ul {
     list-style-type: none;
 }
 
 /* Open and close menu */
 
-#navbar:target .navbar-links{
+#navbar:target .navbar-links {
     display: flex;
     flex-direction: column;
     gap: 20px;
     width: 50%;  /*Me ocupa la pantalla */
-    
     padding: 20px;
     margin: 0;
     background-color: rgba(0, 0, 0, 0.838);
     justify-content: center;  
 }
 
-#navbar:target .open{
+#navbar:target .open {
     display: none;
 }
-#navbar:target .close{
+
+#navbar:target .close {
     display: block;   
 }
+
 .close {
     display: none;
 }
@@ -215,12 +217,11 @@ nav ul {
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-    margin-top: auto;
 }
 
 .footer-link a,
 .footer p {
-    /* color:var(--color-secundary); */
+    
     opacity: 0.75;
     text-decoration: none;
     font-size: 15px;    
@@ -228,8 +229,8 @@ nav ul {
     padding: 0 10px;
     color: rgb(255, 250, 250);
 }
-.footer p{
-    justify-content: flex-end;
+
+.footer p {
     padding-right: 50px;
 }
 
@@ -320,64 +321,49 @@ nav ul {
     background-color: var(--color-primary);
     width: 100%;
     height: 100vh;
-    flex-direction: column;
-    overflow: hidden;
+    flex-direction: column;   
+    position: relative;
+    display: flex;
+    align-items: center;
 }
 .section-contact-me h2 {
     display: none;
 }
+
 .half-section {
-    position: relative;
-    display: flex;
-    width: 100%;
-    height: 100dvh;
-    justify-content: center; 
-    align-items: center; 
-}
-
-.half-section figure:first-of-type img {
-    position: absolute;
-    top: 0;
-    right: 0;}
-
-.half-section figure:last-of-type img {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    opacity: 0.4;
-    width: 250px;
-    height: 350px;
-}
-/* Section Form */
-
-.half-section-two {
-    display: flex;
-    width: 100%;
-    height: 50%;
-    position: relative; 
+    display: none; /* Saco imagnes para mobile y dejo form */
 }
 
 .form-contact {
-    width: 100%;
-    padding: 50px; 
-    background-color: var(--color-primary);   
-    position: relative; 
-   
+    max-width: 600px; /* Ancho máximo del formulario */
+    width: 100%; /* Ajustar al ancho completo de la sección */
+    margin: 0 auto; /* Centrar el formulario horizontalmente */
+    padding: 10px; /* Espaciado interno del formulario */
+    background-color: var(--color-primary);
+    box-sizing: border-box; /* Incluir el padding en el cálculo del tamaño */
+}
+.full-section {
     display: flex;
-   
-    height: 50%;
+    flex-direction: column;
+    align-items: center; /* Centrar los elementos verticalmente */
 }
 .form {
     margin: 0;
 }
 
+/* Image */
+.half-section-two figure:last-of-type img {
+    width: 100%; 
+    height: auto; 
+    opacity: 0.4; 
+}
 fieldset {
     border: none;
 }
 
 legend {
     font-size: 1.9rem;
-    margin-bottom: 30px;
+    margin-bottom: 5px;
     font-family: var(--font-family-three);
     color: var(--color-secundary);
     justify-content: center;
@@ -386,8 +372,8 @@ legend {
 
 label {
     display: block;
-    margin-bottom: 15px;
-    margin-top: 15px;
+    margin-bottom: 5px;
+    margin-top: 10px;
     color: #5b5555;
     font-size: 1.1rem;
     font-family: var(--font-family-three);
@@ -396,9 +382,9 @@ label {
 input,
 select,
 textarea {
-    width: 100%;
+    width: 70%;
     padding: 8px;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     box-sizing: border-box;
     border-top:  var(--color-secundary);
     border-left:  var(--color-secundary);
@@ -413,7 +399,7 @@ textarea {
 
 }
 textarea {
-    height: 100px;
+    height: 70px;
     resize: none;
     
 }
@@ -424,7 +410,7 @@ input[type="submit"] {
     cursor: pointer;
     transition: background-color 0.3s;
     border: none;
-    padding: 10px 30px;
+    padding: 10px 20px;
 }
 
 input[type="submit"]:hover {
@@ -446,7 +432,6 @@ input[type="submit"]:visited {
     color: red;
     border: none;
 } 
-
 
 
 
@@ -490,13 +475,6 @@ input[type="submit"]:visited {
 }
 
 
-/* Navabar Section */
-nav {
-    align-self: flex-start;
-}
-.menu-icon{
-    font-size: 1.9rem;
-}
 
 /* Dentistry Section */
 .dentistry,
@@ -631,74 +609,6 @@ nav {
 .portfolio li.itemo{
     margin: 25px 0;
 }
-
-/* Navbar Styles */
-.navbar-portfolio {
-    position: absolute;
-    top: 50%;
-    left: 10px;
-    transform: translateY(-50%);
-    display: flex;
-    align-items: center;
-    width: 90%;
-    position: fixed;
-    z-index: 1;
-}
-.navbar-portfolio ul li a {
-    text-decoration: none;  
-}
-.navbar-portfolio ul li{
-    list-style: none;
-}
-
-.menu-portfolio a {
-    display: flex;    
-    justify-content: space-between;
-    height: 40px;
-    text-decoration: none;
-    font-size: 40px;
-}
-.list-port {
-    display: none;
-}
-.menu-portfolio .close-icon {
-    display: none;
-}
-/* List Port ul li navbar class */
-.list-port  li{
-    text-decoration: none;
-    color: var(--color-secundary);
-    font-family: var(--font-family-one);
-    font-size: 0.9rem;
-    font-weight:bolder;
-    text-transform: uppercase;
-    opacity: 0.5;
-    letter-spacing: 1px;   
-}
-.list-port li a{
-    color: var(--color-secundary);
-    font-weight: bolder;
-}
-
-/* Open and close menu */
-#navbar-port:target .list-port {
-    display: flex;
-    position: absolute;
-    flex-direction: column;
-    width: 100%;
-    gap: 20px;    
-    padding: 10px;
-    background-color: rgba(10, 9, 9, 0.956);
-    text-align: center;
-}
-
-#navbar-port:target .open-icon {
-    display: none;
-}
-#navbar-port:target .close-icon {
-    display: block;
-}
-
 
 
 /* Jobs Front portfolio */

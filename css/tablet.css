@@ -63,22 +63,31 @@
 /* --------- Contact Page ---------- */
 /* ---------------------------------- */
 
-/* Navbar */
-.navbar-links a i {
-    font-size: 28px; 
-}
+/* Navbar & Hero */
+
 .home a{
     font-size: 28px;
 }
+
+.withe-line-contact{
+    top: 40%;
+}
+.intro-contact p {
+    top: 20%;
+    left: 35%;
+}
+
 .half-section figure:last-of-type img {
-    bottom: -50%;
     right: 0;
-    left: auto;
+    left: 40%;
+    bottom: 0;
     width: 400px;
     height: 652px;
     animation: pulse;
     animation-duration: 4s;
-}
+} 
+
+
 
 
 
