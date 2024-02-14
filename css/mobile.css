@@ -374,9 +374,9 @@ label {
     display: block;
     margin-bottom: 5px;
     margin-top: 10px;
-    color: #5b5555;
+    color: #e3dada;
     font-size: 1.1rem;
-    font-family: var(--font-family-three);
+    font-family: var(--font-family-one);
 }
 
 input,
@@ -390,7 +390,7 @@ textarea {
     border-left:  var(--color-secundary);
     border-right:  var(--color-secundary);
     background-color: var(--color-primary);
-    font-family: var(--font-family-three);
+    font-family: var(--font-family-one);
     resize: none;
     border-bottom: 1px solid var(--color-secundary);
 }

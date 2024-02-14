@@ -212,7 +212,19 @@ nav {
     }
 }
 @media screen and (min-width: 2560px){
-
+    .section-contact-me{
+        width: 80%;
+        flex-direction: row;
+    }
+    legend{
+        font-size: 2rem;
+        margin-bottom: 10px;
+    }
+    label{
+        font-size: 2.5rem;
+        padding: 10px;
+    }
+   
 }
 
 
