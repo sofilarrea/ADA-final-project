@@ -562,20 +562,17 @@ input[type="submit"]:visited {
 
 /* Header Section */
 .hero-portfolio{
-    background-image:linear-gradient( to top, rgba(0, 0, 0, 0.542)50%, rgba(10, 2, 9, 0.241)), url('/assests/images/porfolio3.jpg');
-    background-size: cover;
-    background-position: center;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.542) 50%, rgba(10, 2, 9, 0.241)), url('/assests/images/porfolio3.jpg');
+    background-size: cover;    
     background-repeat: no-repeat;
     background-attachment: fixed;
-    height: 100dvh;
-    padding: 0.1px;
+    height: 100vh;    
     width: 100%;
     position: relative;
-    display: flex;
-    flex-direction: column;
+    display: flex;    
     align-items: center; 
     justify-content: center;
-    bottom: -40px;
+    bottom: -10px;
 } 
 .portfolio{
     display: flex;
@@ -608,6 +605,18 @@ input[type="submit"]:visited {
 }
 .portfolio li.itemo{
     margin: 25px 0;
+}
+/* Nav */
+.portfolio-nav{
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between; 
+    z-index: 1;   
 }
 
 
@@ -657,11 +666,11 @@ input[type="submit"]:visited {
 }   
 
 .cincosentidos:link,
-.dioliva:link,
+.diolivdiolivaa:link,
 .africa:link {
     color: rgb(7, 7, 243);
     text-transform: uppercase;
-    font-size: 1.2rem;
+    font-size: 0.5rem;
 }
 .cincosentidos:visited,
 .dioliva:visited,
