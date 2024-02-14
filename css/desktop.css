@@ -31,7 +31,8 @@ nav {
 
 }
 .navbar-links li a:hover{
-    color:rgb(130, 11, 11)
+    color:var(--color-primary);
+    background-color: var(--color-secundary);
 }
 
 /* Section One */
@@ -53,7 +54,7 @@ nav {
 }
 
 /* Media Querys */
-@media screen and (min-width: 1444px) {
+@media screen and (min-width: 1440px) {
     .intro p {
         font-size: 2rem;
     }
@@ -63,19 +64,90 @@ nav {
     .quotation-mark {
         width: 19%;
     }
-    .card {
+    .card { 
         height: 550px;        
         width: 650px;
     }
-    .polaroid{
-        right: 350%;
+    .polaroid {
+        top: 30%;
+        right: 330%;
+        width: 250px;
+    }
+    .polaroid p {
+        font-size: 1.4rem;
     }
     .section-one-text{
-        left: 50%;
+        left: 45%;
     }
-
+    .section-one-text h3{
+        font-size: 3rem;
+        display: flex;
+    }
+    .section-one-text p{
+        font-size: 1.3rem;    
+    }
+    .footer {
+        height: 60px;
+    }
+    .footer a,
+    .footer p {
+        font-size: 1.5rem;
+    }
 }
-
+@media screen and (min-width: 2560px){
+    .container-hero h1{
+        font-size: 8rem;
+    }
+    .intro p {
+        font-size:3.1rem;
+        top: 20%;
+    }
+    .withe-line{
+        height: 4px;
+    }
+    /* Navbar */
+    .home a {
+        font-size: 2.5rem;
+    }
+    .navbar-links li a {
+        font-size: 2.5rem;
+    }
+    /* Section One */
+    .card { 
+        width: 55%;
+        height: 70%;
+    }  
+    .polaroid {        
+        width:450px;
+    }
+    .polaroid p {
+        font-size: 2rem;
+        letter-spacing: 2px;
+    }
+    
+    .section-one-text{
+        left: 45%;
+    }
+    .section-one-text h3{
+        font-size: 3rem;
+        white-space: nowrap;
+        margin-left: 140%;
+    }
+    .section-one-text p{
+            font-size: 1.9rem;
+            width: 250%;
+            margin: 0 auto;
+            line-height: 1.5;
+        
+    }
+    .footer {
+        height: 80px;
+    }
+    .footer a,
+    .footer p {
+        font-size: 3rem;
+    }
+}
 
 /* ---------------------------------- */
 /* --------- Portfolio Page ---------- */
