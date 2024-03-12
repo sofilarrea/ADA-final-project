@@ -38,7 +38,14 @@ nav {
 /* Section One */
 .polaroid{
     top: 24%;
-    right: 280%;
+    right: 220%;
+    width: 250px;
+    height: 330px;
+
+}
+.polaroid img{
+    height: 250px;
+    width: 250px;
 }
 .section-one-text{
     left: 43%;
