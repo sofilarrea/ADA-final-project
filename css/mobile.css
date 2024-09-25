@@ -546,14 +546,16 @@ input[type="submit"]:visited {
     display: flex;
     align-items: center;
     justify-content: center;
-    bottom: -10px;
+
 }
 .portfolio{
     display: flex;
     flex-direction:column;
 }
 .portfolio ul {
-    position: relative;
+    top: 26%;
+    left: 47%;
+    position: absolute;
     list-style: none;
     padding: 0;
     display: flex;
