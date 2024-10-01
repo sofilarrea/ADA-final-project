@@ -1,4 +1,4 @@
-/* Hero  */ 
+/* Hero  */
 .withe-line{
     width: 19%;
     left: 20%;
@@ -37,8 +37,9 @@ nav {
 
 /* Section One */
 .polaroid{
-    top: 24%;
-    right: 220%;
+  top: 24%;
+  right: 235%;
+
     width: 250px;
     height: 330px;
 
@@ -48,7 +49,7 @@ nav {
     width: 250px;
 }
 .section-one-text{
-    left: 43%;
+  left: 37%;
 }
 
 .section-one-text h3{
@@ -71,27 +72,28 @@ nav {
     .quotation-mark {
         width: 19%;
     }
-    .card { 
-        height: 550px;        
+    .card {
+        height: 550px;
         width: 650px;
     }
     .polaroid {
-        top: 30%;
-        right: 330%;
+      top: 26%;
+      right: 365%;
         width: 250px;
     }
     .polaroid p {
         font-size: 1.4rem;
     }
-    .section-one-text{
-        left: 45%;
-    }
+    .section-one-text {
+      left: 49%;
+      top: 11%;
+  }
     .section-one-text h3{
         font-size: 3rem;
         display: flex;
     }
     .section-one-text p{
-        font-size: 1.3rem;    
+        font-size: 1.3rem;
     }
     .footer {
         height: 60px;
@@ -120,18 +122,19 @@ nav {
         font-size: 2.5rem;
     }
     /* Section One */
-    .card { 
+    .card {
         width: 55%;
         height: 70%;
-    }  
-    .polaroid {        
-        width:450px;
     }
+    .polaroid {
+      width: 263px;
+      height: 421px;
+  }
     .polaroid p {
         font-size: 2rem;
         letter-spacing: 2px;
     }
-    
+
     .section-one-text{
         left: 45%;
     }
@@ -145,7 +148,7 @@ nav {
             width: 250%;
             margin: 0 auto;
             line-height: 1.5;
-        
+
     }
     .footer {
         height: 80px;
@@ -180,21 +183,21 @@ nav {
 }
 
 .form-contact {
-    flex: 5; 
+    flex: 5;
     float: right;
 }
 
 .half-section {
     display: flex;
     flex-direction: column;
-    flex: 1; 
+    flex: 1;
     float: left;
 }
 
 
 
 .half-section figure:first-of-type img {
-    width: 350px;    
+    width: 350px;
     top: 19%;
 }
 
@@ -246,7 +249,7 @@ nav {
     .intro-contact p {
         font-size: 2.9rem;
     }
-   
+
 }
 
 
@@ -260,24 +263,24 @@ nav {
 
 /* Header letters in the hero*/
 .portfolio ul li{
-    font-size: 3.1rem;    
+    font-size: 3.1rem;
 }
 
 .Jobs-Front hr,
 .Jobs-Back hr {
-    width: 35%;  
+    width: 35%;
 }
 .Jobs-Front h2,
 .Jobs-Back h2 {
     font-size: 2rem;
-} 
+}
 
 .bodega figure img,
 .aceite figure img,
 .africa figure img {
     max-width: 50%;
     max-height: 50%;
-    
+
 }
 .bodega p,
 .aceite p,
@@ -340,7 +343,7 @@ nav {
     .Jobs-Front h2,
     .Jobs-Back h2{
         font-size: 5rem;
-    } 
+    }
 
     .bodega figure img,
     .aceite figure img,
@@ -387,10 +390,10 @@ nav {
     .programmer h2,
     .gallerytitle {
         font-size: 3.8rem;
-    } 
+    }
     .dentistry p,
     .programmer p {
         font-size: 2.5rem;
     }
-   
+
 }
