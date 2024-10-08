@@ -37,7 +37,7 @@ nav {
 
 /* Section One */
 .polaroid{
-  top: 24%;
+  top: 29%;
   right: 235%;
 
     width: 250px;
@@ -77,16 +77,16 @@ nav {
         width: 650px;
     }
     .polaroid {
-      top: 26%;
-      right: 365%;
+      top: 31%;
+      right: 313%;
         width: 250px;
     }
     .polaroid p {
         font-size: 1.4rem;
     }
     .section-one-text {
-      left: 49%;
-      top: 11%;
+      left: 45%;
+      top: 21%;
   }
     .section-one-text h3{
         font-size: 3rem;
@@ -127,8 +127,10 @@ nav {
         height: 70%;
     }
     .polaroid {
-      width: 263px;
+      width: 258px;
       height: 421px;
+      right: 579%;
+      top: 35%;
   }
     .polaroid p {
         font-size: 2rem;
